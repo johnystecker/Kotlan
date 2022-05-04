@@ -1,0 +1,245 @@
+<div class="open-source">This project is <a href="http://www.github.com/johnystecker/Kotlan" target="_blank">open-source</a> & licensed under GPLv3</div>
+
+<div id="menu" class="menu">
+    <span data-menuanchor="home" class="kotlan-logo">
+        <a href="#home"><img [src]="logoPath" style="height: 75px; cursor: pointer;"></a>
+    </span>
+    <div class="nav-link-items">
+        <div>
+            <span data-menuanchor="home" class="nav-link-item"><a href="#home">Home</a></span>
+            <span class="nav-separator">/</span>
+        </div>
+
+        <div>
+            <span data-menuanchor="team" class="nav-link-item"><a href="#team">Team</a></span>
+            <span class="nav-separator">/</span>
+        </div>
+        <div>
+            <span data-menuanchor="technologies" class="nav-link-item"><a href="#technologies">Technologies</a></span>
+            <span class="nav-separator">/</span>
+        </div>
+        <div>
+            <span data-menuanchor="clients" class="nav-link-item"><a href="#clients">Clients</a></span>
+            <span class="nav-separator">/</span>
+        </div>
+        <div>
+            <span data-menuanchor="contact" class="nav-link-item"><a href="#contact">Contact</a></span>
+        </div>
+    </div>
+</div>
+
+<div id="fullpage" fullpage [options]="config" (ref)="getRef($event)">
+    
+    <!-- SECTION 1 -->
+    <div class="section flex-align">
+        <div class="main-content">
+
+            <div class="row">
+                <span class="col-6 title">
+                    YOUR <br> ONLINE <br> PRESENCE
+                </span>
+
+                <div class="col-6 flex">
+                    <span class="title-paragraph">
+                        Here at Kotlan, we meet your needs to succesfully grow your brand by designing websites that are
+                        user-friendly, calm and welcoming.
+                        Your user will get the best experience possible when scrolling through your website.
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section flex-align">
+        <div class="main-content">
+
+            <div class="title text-center mb-4">
+                OUR TEAM
+            </div>
+
+            <div class="team-container">
+                <div class="card p-3">
+                    <img class="card-img-top" [src]="img1Path">
+                    <div class="card-body pb-1">
+                        <h5 class="card-title">Matthew Beard</h5>
+                        <p class="card-text">Junior Front-end Developer</p>
+                    </div>
+                </div>
+                <div class="card p-3">
+                    <img class="card-img-top" [src]="img1Path">
+                    <div class="card-body pb-1">
+                        <h5 class="card-title">Boris Collar</h5>
+                        <p class="card-text">Senior Full-stack Developer, Project Architect</p>
+                    </div>
+                </div>
+                <div class="card p-3">
+                    <img class="card-img-top" [src]="img1Path">
+                    <div class="card-body pb-1">
+                        <h5 class="card-title">Peter Smith</h5>
+                        <p class="card-text">Senior Java Developer, Database specialist</p>
+                    </div>
+                </div>
+                <div class="card p-3">
+                    <img class="card-img-top" [src]="img1Path">
+                    <div class="card-body pb-1">
+                        <h5 class="card-title">Will Hamilton</h5>
+                        <p class="card-text">Senior Java Developer, Sysadmin</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="team-paragraph">
+                We are a small team consisting of strong players, that fights day and night to achieve your goals.
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SECTION 3 (with slides) -->
+    <div class="section">
+
+        <div class="title absolute-title">
+            TECHNOLOGIES
+        </div>
+
+        <div class="slideIndex">
+            {{slideIndex}}
+        </div>
+
+        <div class="slide flex-align" data-anchor="Angular">
+            <div class="main-content flex-noshrink">
+                <div class="row">
+                    <div class="col-6 flex-align">
+                        <img [src]="angularPath" class="technologies-img">
+                    </div>
+                    <div class="col-6 flex">
+                        <div class="title-paragraph" style="max-width: 500px;">
+                            Angular is a powerful JavaScript framework that is used widely around the world. It is
+                            competing with Vue for second place in being the most popular JavaScript framework.<br> <br>
+                            The biggest upside to using Angular is its ability to scale freely, so no matter how big
+                            your web application may be, Angular can and will handle it.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide flex-align" data-anchor="React">
+            <div class="main-content flex-noshrink">
+                <div class="row">
+                    <div class="col-6 flex-align">
+                        <img [src]="reactPath" class="technologies-img">
+                    </div>
+                    <div class="col-6 flex">
+                        <div class="title-paragraph" style="max-width: 500px;">
+                            React is also a powerful JavaScript framework that is the most popular amongst the
+                            community. Its high customization of UI elements, JSX language and other features are
+                            pushing React to the top of the popularity leaderboard. <br> <br>
+                            It is used mostly for web applications, that do not require big enterprise solutions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide flex-align" data-anchor="Java">
+            <div class="main-content flex-noshrink">
+                <div class="row">
+                    <div class="col-6 flex-align">
+                        <img [src]="javaPath" class="technologies-img">
+                    </div>
+                    <div class="col-6 flex">
+                        <div class="title-paragraph" style="max-width: 500px;">
+                            Java is one of the most popular programming languages, commonly used in enterprise web
+                            applications with its wide support of enterprise solutions. <br> <br>
+                            Right configuration of Enterprise Java Beans can guarantee almost infinite scaling and
+                            liability to your enterprise application.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide flex-align" data-anchor="Firebase">
+            <div class="main-content flex-noshrink">
+                <div class="row">
+                    <div class="col-6 flex-align">
+                        <img [src]="firebasePath" class="technologies-img">
+                    </div>
+                    <div class="col-6 flex">
+                        <div class="title-paragraph" style="max-width: 500px;">
+                            Firebase by Google serves great purpose in web applications, that are hosted on the Cloud.
+                            Firebase provides features like serverless execution enviroment, realtime database,
+                            authentication, analytics... and a lot more. <br> <br>
+                            With Google Analytics, your can precisely track how users behave when visiting your page,
+                            and then configure your business model around it.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section flex-align">
+        <div class="main-content flex-noshrink">
+
+            <div class="title text-center mb-5">
+                OUR CLIENTS
+            </div>
+
+            <div class="client-wrapper">
+
+                <div *ngFor="let i of clients" class="card client-card">
+                    <a class="card-body" [attr.href]="'http://www.' + i.link" target="_blank"
+                        style="text-decoration: none; color: black;">
+
+                        <div class="font-weight-bold">{{i.name}}</div>
+                        {{i.link}}
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="arrow-right">
+                            <path
+                                d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z" />
+                        </svg>
+                        
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="section flex-align">
+        <div class="main-content">
+
+            <div class="title text-center mb-4">CONTACT US</div>
+
+            <form [formGroup]="contactForm" (ngSubmit)="sendMessage()" style="max-width: 30%; margin: 0 auto;">
+
+                <label for="name" class="contact-label">Name</label>
+                <input id="name" type="text" formControlName="name" class="form-control" autocomplete="off">
+
+                <label for="email" class="contact-label">Email adress</label>
+                <input id="email" type="email" formControlName="email" class="form-control" autocomplete="email">
+
+                <label for="message" class="contact-label">Message</label>
+                <textarea name="message" id="message" formControlName="message" cols="30" rows="8" class="form-control"
+                    style="resize: none; overflow: none;"></textarea>
+
+                <button class="btn btn-success" type="submit" [disabled]="contactForm.invalid || isSubmitting">Send</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- SUCCESS MODAL -->
+<ng-template #successModal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Your message has been sent!</h4>
+        <button type="button" class="btn-close" (click)="modal.close()"></button>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close()">Okay</button>
+    </div>
+</ng-template>

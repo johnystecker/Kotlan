@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Dosis";
+    src:local("Dosis"), url(./assets/font/Dosis-Regular.ttf)
+}
+
+body{
+    margin: 0;
+    font-family: "Dosis", sans-serif !important;
+    background: linear-gradient(120deg, rgba(113,25,121,1) 20%, rgba(27,60,148,1) 100%);
+}
+
+img{
+    user-select: none;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.flex-align {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-noshrink {
+    flex: 1 0;
+}
+
+/* fullpage */
+
+.fp-slidesNav{
+    display: flex;
+    justify-content: center;
+}
+
+.fp-prev{
+    left:40% !important;
+    bottom:50px !important;
+    top:unset !important;
+    margin-top: unset !important;
+}
+
+.fp-next{
+    right:40% !important;
+    bottom:50px !important;
+    top:unset !important;
+    margin-top: unset !important;
+}
+
+.fp-next::after,
+.fp-prev::before{
+    position: absolute;
+    padding: 20px;
+    width: max-content;
+    font-size: 2rem;
+    color: #fff;
+    top: -45px;
+}
+
+.fp-controlArrow:hover{
+    opacity: 0.8;
+}
+
+.fp-next::after{
+    content: 'Next Page';
+}
+
+.fp-prev::before{
+    content: 'Previous Page';
+    right: 0.1px;
+}
+
+#fp-nav ul{
+    transform: scale(1.5) !important;
+}
+.fp-slidesNav.fp-bottom{
+    transform: scale(1.5) !important;
+    bottom: 10px !important;
+}
+
+#fp-nav ul li .fp-tooltip{
+    font-family: unset !important;
+    top: -5px !important;
+}
+
+@media screen and (max-width: 1250px) {
+    
+    #fp-nav ul li .fp-tooltip.fp-right{
+        background: linear-gradient(120deg,  rgba(27,60,148,1) 20%, rgba(113,25,121,1) 100%)  !important;
+        border-radius: 30%;
+        padding: 5px;
+    }
+}
+
+/* BOOTSTRAP */
+
+.btn-success{
+    margin-top: 10px;
+    float: right;
+    color: #fff;
+    background-color: #00823B;
+    border-color: #00823B;
+}
+
+.btn-success:hover:not([disabled]) {
+    background-color: #006435;
+    transform: scale(1.0125, 1.0125);
+}
+
+.btn, .btn-close:focus, .form-control, .form-control:hover, .form-control:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
