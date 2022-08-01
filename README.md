@@ -1,7 +1,8 @@
 # Kotlan
 
 This project was built with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
-Currently online [here](kotlan.web.app)
+
+Currently online [here](http://kotlan.web.app)
 
 ## Purpose of this project
 
